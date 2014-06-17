@@ -28,7 +28,13 @@ $app->container->singleton('twig', function ($c) {
 
 // Define an HTTP GET route
 $app->get('/', function() use ($app) {
-	$app->twig->display('home.php');
+	$app->twig->display('home.php', array('title' => 'Home'));
+});
+
+// Define routes for projects
+$app->get('/project/:name', function($name) use ($app) {
+	$url = preg_replace('/\\s+/', '-', $name);
+	$app->twig->display($url . '.php');
 });
 
 // Run the app

@@ -1,0 +1,159 @@
+// Place all the styles related to the Demo controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+$body-background: #E9EAED;
+$content-background: #FFFFFF;
+$content-color: #4E5665;
+$alert-info-background: #B3E9FF;
+$alert-info-color: #006A94;
+
+html, body {
+	margin: 0px;
+}
+
+body {
+	background-color: $body-background;
+	font-family: 'Helvetica Neue';
+}
+
+#container {
+	
+	width: 1000px;
+	margin: 0 auto;
+	background-color: $content-background;
+	padding: 40px;
+
+	#sidebar {
+
+		// TODO: Responsive queries
+		display: inline-block;
+		vertical-align: top;
+		width: 250px;
+		padding: 0px 10px;
+
+		#title {
+			padding-top: 20px;
+		}
+
+		#date {
+			padding-top: 8px;
+			color: $content-color;
+			font-size: 12px;
+		}
+
+		.annotation {
+			color: $content-color;
+			font-size: 12px;
+			font-weight: 300;
+		}
+
+		#collaborators {
+
+			list-style: none;
+			padding-left: 0px;
+			font-size: 12px;
+			padding: 10px 0px;
+
+			li {
+				padding: 2px 0px;
+			}
+
+		}
+
+		.description {
+			margin: 30px 0px;
+			font-size: 12px;
+			line-height: 18px;
+		}
+
+		#links {
+
+			list-style: none;
+			padding-left: 0px;
+			font-size: 12px;
+			
+			li {
+			
+				padding: 5px 0px;
+			
+				a {
+					color: $content-color;
+				}
+
+			}
+
+		}
+
+	}
+
+	#contents {
+
+		.alert {
+			font-size: 14px;
+			padding: 10px 10px;
+			background-color: $alert-info-background;
+			color: $alert-info-color;
+			text-align: center;
+			margin-top: 20px;
+			margin-bottom: 10px;
+		}
+
+		// TODO: Responsive queries
+		display: inline-block;
+		width: 680px;
+		margin-left: 26px;
+		padding: 0px 10px;
+
+		p {
+			color: $content-color;
+			font-size: 14px;
+			line-height: 24px;
+		}
+
+		.annotate {
+			border-bottom: 1px dotted $content-color;
+		}
+
+		.category {
+			text-transform: uppercase;
+			font-size: 18px;
+			padding: 20px 0px;
+			font-weight: bold;
+		}
+
+		.item {
+			
+			margin-top: 10px;
+			margin-bottom: 25px;
+
+			.attribute {
+				font-size: 12px;
+				padding: 2px 0px;
+			}
+
+		}
+
+		.work {
+
+			.employer {
+				text-transform: uppercase;
+				font-size: 14px;
+				margin-bottom: 6px;
+			}
+
+		}
+
+		.project {
+
+			.title {
+				text-transform: uppercase;
+				font-size: 14px;
+				margin-bottom: 6px;
+			}
+
+		}
+
+	}
+
+}

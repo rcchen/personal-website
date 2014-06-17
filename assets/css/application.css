@@ -1,0 +1,84 @@
+html, body {
+  margin: 0px; }
+
+body {
+  background-color: #e9eaed;
+  font-family: 'Helvetica Neue'; }
+
+#container {
+  width: 1000px;
+  margin: 0 auto;
+  background-color: white;
+  padding: 40px; }
+  #container #sidebar {
+    display: inline-block;
+    vertical-align: top;
+    width: 250px;
+    padding: 0px 10px; }
+    #container #sidebar #title {
+      padding-top: 20px; }
+    #container #sidebar #date {
+      padding-top: 8px;
+      color: #4e5665;
+      font-size: 12px; }
+    #container #sidebar .annotation {
+      color: #4e5665;
+      font-size: 12px;
+      font-weight: 300; }
+    #container #sidebar #collaborators {
+      list-style: none;
+      padding-left: 0px;
+      font-size: 12px;
+      padding: 10px 0px; }
+      #container #sidebar #collaborators li {
+        padding: 2px 0px; }
+    #container #sidebar .description {
+      margin: 30px 0px;
+      font-size: 12px;
+      line-height: 18px; }
+    #container #sidebar #links {
+      list-style: none;
+      padding-left: 0px;
+      font-size: 12px; }
+      #container #sidebar #links li {
+        padding: 5px 0px; }
+        #container #sidebar #links li a {
+          color: #4e5665; }
+  #container #contents {
+    display: inline-block;
+    width: 680px;
+    margin-left: 26px;
+    padding: 0px 10px; }
+    #container #contents .alert {
+      font-size: 14px;
+      padding: 10px 10px;
+      background-color: #b3e9ff;
+      color: #006a94;
+      text-align: center;
+      margin-top: 20px;
+      margin-bottom: 10px; }
+    #container #contents p {
+      color: #4e5665;
+      font-size: 14px;
+      line-height: 24px; }
+    #container #contents .annotate {
+      border-bottom: 1px dotted #4e5665; }
+    #container #contents .category {
+      text-transform: uppercase;
+      font-size: 18px;
+      padding: 20px 0px;
+      font-weight: bold; }
+    #container #contents .item {
+      margin-top: 10px;
+      margin-bottom: 25px; }
+      #container #contents .item .attribute {
+        font-size: 12px;
+        padding: 2px 0px; }
+    #container #contents .work .employer {
+      text-transform: uppercase;
+      font-size: 14px;
+      margin-bottom: 6px; }
+    #container #contents .project .title {
+      text-transform: uppercase;
+      font-size: 14px;
+      margin-bottom: 6px; }
