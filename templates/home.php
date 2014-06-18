@@ -47,6 +47,13 @@
 		<div class="attribute">Fremont, CA</div>
 	</div>
 
+	<div class="item work">
+		<div class="employer">Sandia National Laboratories</div>
+		<div class="attribute">Center for Cyber Defense Technical Intern</div>
+		<div class="attribute">June 2011 - September 2011</div>
+		<div class="attribute">Livermore, CA</div>
+	</div>
+
 	<div class="category">Projects</div>
 
 	<div class="item project">
@@ -54,6 +61,13 @@
 		<div class="attribute">Embeddable interactive data visualizations for non-technical users</div>
 		<div class="attribute">Winter 2014 - Spring 2014</div>
 		<div class="attribute">Ruby on Rails, Backbone.JS, MongoDB</div>
+	</div>
+
+	<div class="item project">
+		<div class="title">SwipeShow</div>
+		<div class="attribute">Gesture based presentation system with Kinect</div>
+		<div class="attribute">Winter 2012</div>
+		<div class="attribute">C#, ASP.NET, YAML</div>
 	</div>
 
 	<div class="item project">
