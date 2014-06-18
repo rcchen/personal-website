@@ -2,6 +2,8 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
+@import '_media-queries';
+
 $body-background: #E9EAED;
 $content-background: #FFFFFF;
 $content-color: #4E5665;
@@ -17,19 +19,56 @@ body {
 	font-family: 'Helvetica Neue';
 }
 
+@include mobile-only {
+	#container {
+		width: 100%;
+		#sidebar {
+			width: 80%;
+		}
+		#contents {
+			width: 80%;
+			margin-left: 0px;
+		}
+	}
+}
+
+@include tablet-only {
+	#container {
+		width: 100%;
+		#sidebar {
+			width: 80%;
+		}
+		#contents {
+			width: 80%;
+			margin-left: 0px;
+		}
+	}	
+}
+
+@include desktop-and-up {
+	#container {
+		width: 80%;
+		max-width: 1000px;
+		#sidebar {
+			width: 25%;
+		}
+		#contents {
+			width: 65%;
+			margin-left: 26px;
+		}
+	}	
+}
+
 #container {
 	
-	width: 1000px;
 	margin: 0 auto;
 	background-color: $content-background;
 	padding: 40px;
 
 	#sidebar {
 
-		// TODO: Responsive queries
 		display: inline-block;
 		vertical-align: top;
-		width: 250px;
 		padding: 0px 10px;
 
 		#title {
@@ -89,7 +128,11 @@ body {
 
 	#contents {
 
+		display: inline-block;
+		padding: 0px 10px;
+
 		.alert {
+
 			font-size: 14px;
 			padding: 10px 10px;
 			background-color: $alert-info-background;
@@ -97,13 +140,9 @@ body {
 			text-align: center;
 			margin-top: 20px;
 			margin-bottom: 10px;
-		}
+			width: 100%;
 
-		// TODO: Responsive queries
-		display: inline-block;
-		width: 680px;
-		margin-left: 26px;
-		padding: 0px 10px;
+		}
 
 		p {
 			color: $content-color;
