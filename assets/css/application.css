@@ -5,6 +5,9 @@ body {
   background-color: #e9eaed;
   font-family: 'Helvetica Neue'; }
 
+a {
+  color: #4e5665; }
+
 @media (max-width: 480px) {
   #container {
     width: 90%; }
@@ -71,11 +74,15 @@ body {
       font-size: 12px; }
       #container #sidebar #links li {
         padding: 5px 0px; }
-        #container #sidebar #links li a {
-          color: #4e5665; }
   #container #contents {
     display: inline-block;
     padding: 0px 10px; }
+    #container #contents .cover-photo {
+      margin: 20px 0px;
+      height: 200px;
+      width: 100%; }
+      #container #contents .cover-photo img {
+        width: 100%; }
     #container #contents .alert {
       font-size: 14px;
       background-color: #b3e9ff;

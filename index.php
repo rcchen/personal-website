@@ -34,7 +34,8 @@ $app->get('/', function() use ($app) {
 // Define routes for projects
 $app->get('/project/:name', function($name) use ($app) {
 	$url = preg_replace('/\\s+/', '-', $name);
-	$app->twig->display($url . '.php');
+	$url = 'projects/' . $url . '.php';
+	$app->twig->display('project.php', array('content' => $url));
 });
 
 // Run the app

@@ -19,6 +19,10 @@ body {
 	font-family: 'Helvetica Neue';
 }
 
+a {
+	color: $content-color;
+}
+
 @include mobile-only {
 	#container {
 		width: 90%;
@@ -124,10 +128,6 @@ body {
 			li {
 			
 				padding: 5px 0px;
-			
-				a {
-					color: $content-color;
-				}
 
 			}
 
@@ -139,6 +139,16 @@ body {
 
 		display: inline-block;
 		padding: 0px 10px;
+
+		.cover-photo {
+			margin: 20px 0px;
+			height: 200px;
+			width: 100%;
+
+			img {
+				width: 100%;
+			}
+		}
 
 		.alert {
 
